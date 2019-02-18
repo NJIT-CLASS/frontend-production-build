@@ -22,7 +22,7 @@ interface CollapsibleProps extends React.HTMLProps<Collapsible> {
   onClosing?: () => void
   trigger: string | React.ReactElement<any>
   triggerWhenOpen?: string | React.ReactElement<any>
-  triggerDisabled?: false
+  triggerDisabled?: boolean
   lazyRender?: boolean
   overflowWhenOpen?:
     | 'hidden'

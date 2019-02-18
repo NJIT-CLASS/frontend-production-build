@@ -60,6 +60,10 @@ With a little CSS becomes
 ![Alt text](example/img/becomes.png)
 
 ## Properties *(Options)*
+
+### **contentContainerTagName** | *string* | default: `div`
+Tag Name for the Collapsible Root Element.
+
 ### **trigger** | *string* or *React Element* | **required**
 The text or element to appear in the trigger link.
 
@@ -118,7 +122,6 @@ after `.Collapsible__trigger`
 ### **tabIndex** | *number* | default: null
 A `tabIndex` prop adds the `tabIndex` attribute to the trigger element which in turn allows the Collapsible trigger to gain focus.
 
-
 ## CSS Class String Props
 ### **classParentString** | *string* | default: Collapsible
 Use this to overwrite the parent CSS class for the Collapsible component parts. Read more in the CSS section below.
@@ -140,7 +143,6 @@ Use this to overwrite the parent CSS class for the Collapsible component parts. 
 
 ### **contentInnerClassName** | *string*
 `.Collapsible__contentInner` element
-
 
 ## CSS Styles
 In theory you don't need any CSS to get this to work, but let's face it, it'd be pretty rubbish without it.
