@@ -7,7 +7,7 @@ var handler = require('../route-handlers/account');
 
 module.exports = {
     route: '/account',
-    title: 'Account',
+    title: 'My Profile',
     routeHandler: handler,
     access: {
         admins: true,
@@ -16,6 +16,6 @@ module.exports = {
         role: _react_constants.ROLES.GUEST,
         loggedOut: false
     },
-    icon: 'user',
+    icon: 'user-circle',
     sidebar: true
 };

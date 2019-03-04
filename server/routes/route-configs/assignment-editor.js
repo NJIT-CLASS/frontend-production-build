@@ -17,6 +17,6 @@ module.exports = {
         role: _react_constants.ROLES.TEACHER,
         loggedOut: false
     },
-    icon: 'file-text',
+    icon: 'edit',
     sidebar: true
 };

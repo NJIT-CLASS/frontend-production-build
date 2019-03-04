@@ -7,7 +7,7 @@ var handler = require('../route-handlers/database-maintenance');
 
 module.exports = {
     route: '/database-manage',
-    title: 'Database Maintenance',
+    title: 'Archive/Delete',
     routeHandler: handler,
     access: {
         admins: true,
@@ -16,6 +16,6 @@ module.exports = {
         role: _react_constants.ROLES.ADMIN,
         loggedOut: false
     },
-    icon: 'database',
+    icon: 'archive',
     sidebar: true
 };

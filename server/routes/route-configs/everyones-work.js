@@ -7,7 +7,7 @@ var handler = require('../route-handlers/everyones-work');
 
 module.exports = {
     route: '/everyones-work/:assignmentId?',
-    title: 'Everyone\'s Work',
+    title: 'See Everyone\'s Work',
     routeHandler: handler,
     access: {
         admins: true,
@@ -16,6 +16,6 @@ module.exports = {
         role: _react_constants.ROLES.PARTICIPANT,
         loggedOut: false
     },
-    icon: 'tasks',
+    icon: 'users',
     sidebar: true
 };

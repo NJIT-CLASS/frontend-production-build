@@ -16,6 +16,6 @@ module.exports = {
         role: _react_constants.ROLES.PARTICIPANT,
         loggedOut: false
     },
-    icon: 'dashboard',
+    icon: 'home',
     sidebar: true
 };

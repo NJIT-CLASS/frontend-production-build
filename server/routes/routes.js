@@ -7,11 +7,10 @@ var _getIterator3 = _interopRequireDefault(_getIterator2);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /* maintained by gulp:create-route. Do not change how this works without checking that script */
-var pages = ['login', 'logout', 'dashboard', 'my-account', 'course-section-management', 'create-assignment', 'assignment-editor',
+var pages = ['login', 'logout', 'dashboard', 'assignments-page', 'everyones-work', 'assignment-final-grades', 'account', 'about', 'course-section-management', 'assignment-editor', 'user-management', 'create-assignment', 'translation-manager', 'database-maintenance',
+
 //'administrator',
-'add-user', 'settings', 'account', 'translation-manager', 'reset-password', 'confirm-password-reset', 'course-page', 'masquerade', 'stop-masquerading', 'task-template', 'assign-to-section', 'testing-ground', 'task-status-table', 'onboarding', 'initial-password-change', 'assignment-final-grades', 'volunteer-pool', 'section', 'user-management', 'everyones-work', 'reallocation', 'about', 'section',
-//'assignment-status-table',
-'database-maintenance', 'assignments-page'];
+'add-user', 'settings', 'my-account', 'reset-password', 'confirm-password-reset', 'course-page', 'masquerade', 'stop-masquerading', 'task-template', 'assign-to-section', 'testing-ground', 'task-status-table', 'onboarding', 'initial-password-change', 'volunteer-pool', 'section', 'reallocation', 'section'];
 
 var pageConfigs = [];
 

@@ -16,6 +16,6 @@ module.exports = {
         role: _react_constants.ROLES.GUEST,
         loggedOut: true
     },
-    icon: 'files-o',
+    icon: 'info-circle',
     sidebar: true
 };

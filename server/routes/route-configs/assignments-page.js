@@ -7,7 +7,7 @@ var handler = require('../route-handlers/assignments-page');
 
 module.exports = {
     route: '/assignments_page',
-    title: 'Assignments Status',
+    title: 'All Assignments\' Status',
     routeHandler: handler,
     access: {
         admins: true,
@@ -16,6 +16,6 @@ module.exports = {
         role: _react_constants.ROLES.PARTICIPANT,
         loggedOut: false
     },
-    icon: 'paper',
+    icon: 'list',
     sidebar: true
 };

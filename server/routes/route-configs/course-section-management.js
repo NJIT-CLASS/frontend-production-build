@@ -16,6 +16,6 @@ module.exports = {
         role: _react_constants.ROLES.TEACHER,
         loggedOut: false
     },
-    icon: 'pencil-square',
+    icon: 'sitemap',
     sidebar: true
 };

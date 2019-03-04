@@ -5,6 +5,8 @@ class Collapsible extends Component {
   constructor(props) {
     super(props)
 
+    this.timeout = undefined;
+    
     // Bind class methods
     this.handleTriggerClick = this.handleTriggerClick.bind(this);
     this.handleTransitionEnd = this.handleTransitionEnd.bind(this);
@@ -41,7 +43,8 @@ class Collapsible extends Component {
     }
 
     if (prevState.height === 'auto' && this.state.shouldSwitchAutoOnNextCycle === true) {
-      window.setTimeout(() => { // Set small timeout to ensure a true re-render
+      window.clearTimeout(this.timeout);
+      this.timeout = window.setTimeout(() => { // Set small timeout to ensure a true re-render
         this.setState({
           height: 0,
           overflow: 'hidden',
@@ -61,6 +64,10 @@ class Collapsible extends Component {
         this.props.onClosing();
       }
     }
+  }
+  
+  componentWillUnmount () {
+    window.clearTimeout(this.timeout);
   }
 
   closeCollapsible() {
@@ -92,11 +99,12 @@ class Collapsible extends Component {
   }
 
   handleTriggerClick(event) {
-    event.preventDefault();
-
     if (this.props.triggerDisabled) {
       return
     }
+    
+    event.preventDefault();
+
 
     if (this.props.handleTriggerClick) {
       this.props.handleTriggerClick(this.props.accordionPosition);
@@ -139,7 +147,7 @@ class Collapsible extends Component {
   }
 
   render() {
-    var dropdownStyle = {
+    const dropdownStyle = {
       height: this.state.height,
       WebkitTransition: this.state.transition,
       msTransition: this.state.transition,
